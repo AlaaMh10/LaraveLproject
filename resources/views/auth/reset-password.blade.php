@@ -1,4 +1,17 @@
 <x-guest-layout>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('edit.profile')}}">Edit Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('change.password') }}">Security</a>
+            </li>
+        </ul>
+    
+    </nav>
     <form method="POST" action="{{ route('password.store') }}">
         @csrf
 

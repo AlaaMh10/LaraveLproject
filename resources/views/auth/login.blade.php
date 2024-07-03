@@ -13,6 +13,7 @@
 
         <!-- Bootstrap Css -->
         <link href="{{ asset ('backend/assets/css/bootstrap.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <link href="{{ asset ('backend/assets/css/app.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
         <link href="{{ asset ('backend/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- App Css-->
@@ -20,19 +21,19 @@
 
     </head>
 
-    <body class="auth-body-bg">
+    <body class="auth-body-bg  ">
         <div class="bg-overlay"></div>
-        <div class="wrapper-page">
+        <div class="wrapper-page bg-dark p-2 text-white bg-opacity-75 card-log">
             <div class="container-fluid p-0">
-                <div class="card">
-                    <div class="card-body">
+                <div class="text-white">
+                    <div class="text-white">
 
                         <div class="text-center mt-4">
                             <div class="mb-3">
-                                <a href="index.html" class="auth-logo">
-                                    <img src="{{ asset ('backend/assets/images/logo-dark.png')}}" height="30" class="logo-dark mx-auto" alt="">
-                                    <img src="{{ asset ('backend/assets/images/logo-light.png')}}" height="30" class="logo-light mx-auto" alt="">
-                                </a>
+                            
+                                    <img src="{{ asset ('assets/img/icons/finansya.png')}}" height="50" class="logo-dark mx-auto" alt="">
+                                    <img src="{{ asset ('assets/img/icons/finansya.png')}}" height="50" class="logo-light mx-auto" alt="">
+                                
                             </div>
                         </div>
 
@@ -43,7 +44,7 @@
 <form class="form-horizontal mt-3" method="POST" action="{{ route('login') }}">
     @csrf
 
-    <div class="form-group mb-3 row">
+    <div class="form-group mb-3 row text-white">
         <div class="col-12">
             <input class="form-control" type="text" id="username" name="username" required="" placeholder="Username">
         </div>
@@ -55,7 +56,7 @@
     </div>
 
 
-    <div class="form-group mb-3 row">
+    <div class="form-group mb-3 row ">
         <div class="col-12">
             <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="remember_me" name="remember">
@@ -70,12 +71,12 @@
         </div>
     </div>
 
-    <div class="form-group mb-0 row mt-2">
+    <div class="form-group mb-0 row mt-2 text-white">
         <div class="col-sm-7 mt-3">
-            <a href="{{ route('password.request') }}" class="text-muted"><i class="mdi mdi-lock"></i> Forgot your password?</a>
+            <a href="{{ route('password.request') }}" class="text-white"><i class="mdi mdi-lock"></i> Forgot your password?</a>
         </div>
         <div class="col-sm-5 mt-3">
-            <a href="{{ route('register') }}" class="text-muted"><i class="mdi mdi-account-circle"></i> Create an account</a>
+            <a href="{{ route('register') }}" class="text-white"><i class="mdi mdi-account-circle"></i> Create an account</a>
         </div>
     </div>
 </form>

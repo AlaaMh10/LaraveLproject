@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use App\Models\User;
+use App\Models\Purchase;
 use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
@@ -26,18 +27,26 @@ class AdminController extends Controller
         return redirect('/login')->with($notification);
     } // End Method
 
+
+    public function show_data(){
+        $users = User::latest()->get();
+       $allpurchase = Purchase::latest()->get();
+       return view('admin.index',compact('users','allpurchase'));
+    
+    }
+    
     public function profile()
     {
         $id = Auth::user()->id;
-        $adminDate = User::find($id);
-        return view('admin.admin_profile_view', compact('adminDate'));
+        $adminData= User::find($id);
+        return view('admin.admin_profile_view', compact('adminData'));
     } // End Method
 
     public function EditProfile()
     {
         $id = Auth::user()->id;
-        $editDate = User::find($id);
-        return view('admin.admin_profile_edit', compact('editDate'));
+        $editData = User::find($id);
+        return view('admin.admin_profile_edit', compact('editData'));
     }
 
 
@@ -78,25 +87,41 @@ class AdminController extends Controller
     public function UpdatePassword(Request $request)
     {
 
-
         $validateData = $request->validate([
-
             'oldpassword' => 'required',
             'newpassword' => 'required',
             'confirm_password' => 'required|same:newpassword',
 
-
         ]);
+
         $hashedPassword = Auth::user()->password;
-        if (Hash::check($request->oldpassword, $hashedPassword)) {
+        if (Hash::check($request->oldpassword,$hashedPassword )) {
             $users = User::find(Auth::id());
             $users->password = bcrypt($request->newpassword);
             $users->save();
-            session()->flash('message', 'Password Updated Successfully');
+
+            session()->flash('message','Password Updated Successfully');
             return redirect()->back();
-        } else {
-            session()->flash('message', 'Old password Not Match');
+        } else{
+            session()->flash('message','Old password is not match');
             return redirect()->back();
         }
+}
+public function Login(Request $request){
+    // dd($request->all());
+    $check=$request->all();
+    if (Auth::guard('admin')->attempt(['email'=>$check['email'],'password'=>$check['password'] ])) {
+
+        return redirect()->route('admin.admin_master')->with('error','Admin login succesfully');
+        # code...
     }
+
+    else{
+        return back()->with('error','Invalid Email Or Password');
+    }
+}
+
+
+
+
 }

@@ -17,21 +17,28 @@
         <link href="{{ asset ('backend/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- App Css-->
         <link href="{{ asset ('backend/assets/css/app.min.css')}}" id="app-style" rel="stylesheet" type="text/css" />
+        <!-- Bootstrap Css -->
+<link href="{{ asset ('backend/assets/css/bootstrap.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+<link href="{{ asset ('backend/assets/css/app.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+<!-- Icons Css -->
+<link href="{{ asset ('backend/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+<!-- App Css-->
+<link href="{{ asset ('backend/assets/css/app.min.css')}}" id="app-style" rel="stylesheet" type="text/css" />
 
     </head>
 
     <body class="auth-body-bg">
         <div class="bg-overlay"></div>
-        <div class="wrapper-page">
+        <div class="wrapper-page bg-dark p-2 text-white bg-opacity-75 card-log">
             <div class="container-fluid p-0">
-                <div class="card">
-                    <div class="card-body">
+                <div class="text-white">
+                    <div class="text-white">
 
                         <div class="text-center mt-4">
                             <div class="mb-3">
                                 <a href="index.html" class="auth-logo">
-                                    <img src="{{ asset ('backend/assets/images/logo-dark.png')}}" height="30" class="logo-dark mx-auto" alt="">
-                                    <img src="{{ asset ('backend/assets/images/logo-light.png')}}" height="30" class="logo-light mx-auto" alt="">
+                                <img src="{{ asset ('assets/img/icons/finansya.png')}}" height="50" class="logo-dark mx-auto" alt="">
+                                    <img src="{{ asset ('assets/img/icons/finansya.png')}}" height="50" class="logo-light mx-auto" alt="">
                                 </a>
                             </div>
                         </div>

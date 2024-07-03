@@ -39,7 +39,7 @@
               <div class="row mb-3">
                 <label for="example-text-input" class="col-sm-2 col-form-label">Short Description </label>
                 <div class="col-sm-10">
-                    <textarea required="" name="short_description"  class="form-control" rows="5">
+                    <textarea required="" name="short_description"  class="form-control" rows="8">
                  {{ $aboutpage->short_description }}
                     </textarea>
                 </div>

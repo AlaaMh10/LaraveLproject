@@ -27,7 +27,14 @@
     14. Preloader
     15. Dark Mode
 
-=============================*/
+
+
+/* style11 */
+.card{
+  width: 450px;
+}
+
+/*=============================*/
 /*=============================
 01. Theme default CSS
 =============================*/
@@ -1487,6 +1494,11 @@ label {
 /*=============================
 02. Header
 =============================*/
+.rounded-circle{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
 .menu__area {
   padding: 39px 0; }
   @media (max-width: 1500px) {

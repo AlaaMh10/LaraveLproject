@@ -8,6 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Footer extends Model
 {
     use HasFactory;
-
-    protected $guarder=[];
+     protected $guarded = [];
 }

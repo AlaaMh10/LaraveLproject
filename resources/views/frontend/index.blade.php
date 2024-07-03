@@ -1,1014 +1,318 @@
 @extends('frontend.main_master')
 @section('main')
+
+@section('title')
+Home | Finansya Lab
+@endsection
+<!-- banner-area -->
 @include('frontend.home_all.home_slide')
-    <!-- banner-area -->
+<!-- banner-area-end -->
+<!-- about-area -->
+@include('frontend.home_all.home_about')
+<!-- about-area-end -->
 
-    <!-- banner-area-end -->
-
-    <!-- about-area -->
-    @include('frontend.home_all.home_about')
-
-    <!-- about-area-end -->
-
-    <!-- services-area -->
-    <section class="services">
-        <div class="container">
-            <div class="services__title__wrap">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-xl-5 col-lg-6 col-md-8">
-                        <div class="section__title">
-                            <span class="sub-title">02 - my Services</span>
-                            <h2 class="title">Creates amazing digital experiences</h2>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-6 col-md-4">
-                        <div class="services__arrow"></div>
-                    </div>
-                </div>
+<!-- work-process-area -->
+@include('frontend.home_all.home_work_process')
+<!-- work-process-area-end -->
+<!-- portfolio-area -->
+@include('frontend.home_all.portfolio')
+<!-- portfolio-area-end -->
+<!-- partner-area -->
+<section class="partner">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <ul class="partner__logo__wrap">
+                    <li>
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/trade.jpg') }}" alt="">
+                        
+                    </li>
+                    <li>
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/trade1.jpg') }}" alt="">
+                        
+                    </li>
+                    <li>
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/trade2.jpg') }}" alt="">
+                    </li>
+                    <li>
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/trade3.jpg') }}" alt="">
+                    </li>
+                    <li>
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/trade4.jpg') }}" alt="">
+                    </li>
+                    <li>
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/trade5.jpg') }}" alt="">
+                    </li>
+                </ul>
             </div>
-            <div class="row gx-0 services__active">
-                <div class="col-xl-3">
-                    <div class="services__item">
-                        <div class="services__thumb">
-                            <a href="services-details.html"><img src="{{asset('frontend/assets/img/images/services_img01.jpg')}}" alt=""></a>
-                        </div>
-                        <div class="services__content">
-                            <div class="services__icon">
-                                <img class="light" src="{{asset('frontend/assets/img/icons/services_light_icon01.png')}}" alt="">
-                                <img class="dark" src="{{asset('frontend/assets/img/icons/services_icon01.png')}}" alt="">
-                            </div>
-                            <h3 class="title"><a href="services-details.html">Business Strategy</a></h3>
-                            <p>Strategy is a forward-looking plan for your brand’s behavior. Strategy is a forward-looking plan.</p>
-                            <ul class="services__list">
-                                <li>Research & Data</li>
-                                <li>Branding & Positioning</li>
-                                <li>Business Consulting</li>
-                                <li>Go To Market</li>
-                            </ul>
-                            <a href="services-details.html" class="btn border-btn">Read more</a>
-                        </div>
+            <div class="col-lg-6">
+                <div class="partner__content">
+                    <div class="section__title">
+                        <span class="sub-title">05 - partners</span>
+                        <h2 class="title">financial assets you can trade</h2>
                     </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="services__item">
-                        <div class="services__thumb">
-                            <a href="services-details.html"><img src="{{asset('frontend/assets/img/images/services_img02.jpg')}}" alt=""></a>
-                        </div>
-                        <div class="services__content">
-                            <div class="services__icon">
-                                <img class="light" src="{{asset('frontend/assets/img/icons/services_light_icon02.png')}}" alt="">
-                                <img class="dark" src="{{asset('frontend/assets/img/icons/services_icon02.png')}}" alt="">
-                            </div>
-                            <h3 class="title"><a href="services-details.html">Brand Strategy</a></h3>
-                            <p>Strategy is a forward-looking plan for your brand’s behavior. Strategy is a forward-looking plan.</p>
-                            <ul class="services__list">
-                                <li>User Research & Testing</li>
-                                <li>UX Design</li>
-                                <li>Visual Design</li>
-                                <li>Information Architecture</li>
-                            </ul>
-                            <a href="services-details.html" class="btn border-btn">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="services__item">
-                        <div class="services__thumb">
-                            <a href="services-details.html"><img src="{{asset('frontend/assets/img/images/services_img03.jpg')}}" alt=""></a>
-                        </div>
-                        <div class="services__content">
-                            <div class="services__icon">
-                                <img class="light" src="{{asset('frontend/assets/img/icons/services_light_icon03.png')}}" alt="">
-                                <img class="dark" src="{{asset('frontend/assets/img/icons/services_icon03.png')}}" alt="">
-                            </div>
-                            <h3 class="title"><a href="services-details.html">Product Design</a></h3>
-                            <p>Strategy is a forward-looking plan for your brand’s behavior. Strategy is a forward-looking plan.</p>
-                            <ul class="services__list">
-                                <li>User Research & Testing</li>
-                                <li>UX Design</li>
-                                <li>Visual Design</li>
-                                <li>Information Architecture</li>
-                            </ul>
-                            <a href="services-details.html" class="btn border-btn">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="services__item">
-                        <div class="services__thumb">
-                            <a href="services-details.html"><img src="{{asset('frontend/assets/img/images/services_img04.jpg')}}" alt=""></a>
-                        </div>
-                        <div class="services__content">
-                            <div class="services__icon">
-                                <img class="light" src="{{asset('frontend/assets/img/icons/services_light_icon04.png')}}" alt="">
-                                <img class="dark" src="{{asset('frontend/assets/img/icons/services_icon04.png')}}" alt="">
-                            </div>
-                            <h3 class="title"><a href="services-details.html">Visual Design</a></h3>
-                            <p>Strategy is a forward-looking plan for your brand’s behavior. Strategy is a forward-looking plan.</p>
-                            <ul class="services__list">
-                                <li>User Research & Testing</li>
-                                <li>UX Design</li>
-                                <li>Visual Design</li>
-                                <li>Information Architecture</li>
-                            </ul>
-                            <a href="services-details.html" class="btn border-btn">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="services__item">
-                        <div class="services__thumb">
-                            <a href="services-details.html"><img src="{{asset('frontend/assets/img/images/services_img03.jpg')}}" alt=""></a>
-                        </div>
-                        <div class="services__content">
-                            <div class="services__icon">
-                                <img class="light" src="{{asset('frontend/assets/img/icons/services_light_icon02.png')}}" alt="">
-                                <img class="dark" src="{{asset('frontend/assets/img/icons/services_icon02.png')}}" alt="">
-                            </div>
-                            <h3 class="title"><a href="services-details.html">Web Development</a></h3>
-                            <p>Strategy is a forward-looking plan for your brand’s behavior. Strategy is a forward-looking plan.</p>
-                            <ul class="services__list">
-                                <li>User Research & Testing</li>
-                                <li>UX Design</li>
-                                <li>Visual Design</li>
-                                <li>Information Architecture</li>
-                            </ul>
-                            <a href="services-details.html" class="btn border-btn">Read more</a>
-                        </div>
-                    </div>
+                    <p>Explore our trading education platform! We offer courses for all levels, from beginners to experts. Learn at your own pace, anytime, anywhere. Join us and start your journey to becoming a better trader.</p>
+                    <a href="contact.html" class="btn">Start a conversation</a>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- services-area-end -->
+    </div>
+</section>
+<!-- partner-area-end -->
+<!-- testimonial-area -->
+@include('frontend.home_all.home_happy')
+<!-- testimonial-area-end -->
+<!-- blog-area -->
+@include('frontend.home_all.home_indicator')
+<!-- blog-area-end -->
+<!-- contact-area -->
 
-    <!-- work-process-area -->
-    <section class="work__process">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-8">
-                    <div class="section__title text-center">
-                        <span class="sub-title">03 - Working Process</span>
-                        <h2 class="title">A clear product design process is the basis of success</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row work__process__wrap">
-                <div class="col">
-                    <div class="work__process__item">
-                        <span class="work__process_step">Step - 01</span>
-                        <div class="work__process__icon">
-                            <img class="light" src="{{asset('frontend/assets/img/icons/wp_light_icon01.png')}}" alt="">
-                            <img class="dark" src="{{asset('frontend/assets/img/icons/wp_icon01.png')}}" alt="">
-                        </div>
-                        <div class="work__process__content">
-                            <h4 class="title">Discover</h4>
-                            <p>Initial ideas or inspiration & Establishment of user needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="work__process__item">
-                        <span class="work__process_step">Step - 02</span>
-                        <div class="work__process__icon">
-                            <img class="light" src="{{asset('frontend/assets/img/icons/wp_light_icon02.png')}}" alt="">
-                            <img class="dark" src="{{asset('frontend/assets/img/icons/wp_icon02.png')}}" alt="">
-                        </div>
-                        <div class="work__process__content">
-                            <h4 class="title">Define</h4>
-                            <p>Interpretation & Alignment of findings to project objectives.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="work__process__item">
-                        <span class="work__process_step">Step - 03</span>
-                        <div class="work__process__icon">
-                            <img class="light" src="{{asset('frontend/assets/img/icons/wp_light_icon03.png')}}" alt="">
-                            <img class="dark" src="{{asset('frontend/assets/img/icons/wp_icon03.png')}}" alt="">
-                        </div>
-                        <div class="work__process__content">
-                            <h4 class="title">Develop</h4>
-                            <p>Design-Led concept and Proposals hearted & assessed</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="work__process__item">
-                        <span class="work__process_step">Step - 04</span>
-                        <div class="work__process__icon">
-                            <img class="light" src="{{asset('frontend/assets/img/icons/wp_light_icon04.png')}}" alt="">
-                            <img class="dark" src="{{asset('frontend/assets/img/icons/wp_icon04.png')}}" alt="">
-                        </div>
-                        <div class="work__process__content">
-                            <h4 class="title">Deliver</h4>
-                            <p>Process outcomes finalised & Implemented</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- work-process-area-end -->
+<section class="contact" id="contact">
 
-    <!-- portfolio-area -->
-    <section class="portfolio">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-8">
-                    <div class="section__title text-center">
-                        <span class="sub-title">04 - Portfolio</span>
-                        <h2 class="title">All creative work</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-10 col-lg-12">
-                    <ul class="nav nav-tabs portfolio__nav" id="portfolioTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button"
-                                role="tab" aria-controls="all" aria-selected="true">All</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="website-tab" data-bs-toggle="tab" data-bs-target="#website" type="button"
-                                role="tab" aria-controls="website" aria-selected="false">website</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="apps-tab" data-bs-toggle="tab" data-bs-target="#apps" type="button" role="tab" aria-controls="apps" aria-selected="false">mobile apps</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard" type="button"
-                                role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="landing-tab" data-bs-toggle="tab" data-bs-target="#landing" type="button"
-                                role="tab" aria-controls="landing" aria-selected="false">landing page</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="branding-tab" data-bs-toggle="tab" data-bs-target="#branding" type="button"
-                                role="tab" aria-controls="branding" aria-selected="false">Branding</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="graphic-tab" data-bs-toggle="tab" data-bs-target="#graphic" type="button"
-                                role="tab" aria-controls="graphic" aria-selected="false">Graphic Design</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="tab-content" id="portfolioTabContent">
-            <div class="tab-pane show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-                <div class="container">
-                    <div class="row gx-0 justify-content-center">
-                        <div class="col">
-                            <div class="portfolio__active">
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img01.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Apps Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img02.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img03.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>UX/UI Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img04.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img05.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img06.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img07.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="website" role="tabpanel" aria-labelledby="website-tab">
-                <div class="container">
-                    <div class="row gx-0 justify-content-center">
-                        <div class="col">
-                            <div class="portfolio__active">
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img07.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Nature of Business Strategy System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img06.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img01.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Apps Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img02.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img03.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>UX/UI Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img04.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img05.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="apps" role="tabpanel" aria-labelledby="apps-tab">
-                <div class="container">
-                    <div class="row gx-0 justify-content-center">
-                        <div class="col">
-                            <div class="portfolio__active">
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img06.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Product Design and Development</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img01.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Apps Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img02.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img03.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>UX/UI Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img04.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img05.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img07.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                <div class="container">
-                    <div class="row gx-0 justify-content-center">
-                        <div class="col">
-                            <div class="portfolio__active">
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img05.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Brand strategy System Management</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img01.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Apps Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img02.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img03.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>UX/UI Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img04.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img06.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img07.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="landing" role="tabpanel" aria-labelledby="landing-tab">
-                <div class="container">
-                    <div class="row gx-0 justify-content-center">
-                        <div class="col">
-                            <div class="portfolio__active">
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img04.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Visual Design System Management</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img01.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Apps Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img02.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img03.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>UX/UI Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img05.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img06.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img07.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="branding" role="tabpanel" aria-labelledby="branding-tab">
-                <div class="container">
-                    <div class="row gx-0 justify-content-center">
-                        <div class="col">
-                            <div class="portfolio__active">
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img03.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>UX/UI Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Animation Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img01.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Apps Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img02.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img04.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img05.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img06.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img07.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="graphic" role="tabpanel" aria-labelledby="graphic-tab">
-                <div class="container">
-                    <div class="row gx-0 justify-content-center">
-                        <div class="col">
-                            <div class="portfolio__active">
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img02.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Graphic Design Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img01.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Apps Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img03.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>UX/UI Design</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img04.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img05.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img06.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__item">
-                                    <div class="portfolio__thumb">
-                                        <img src="{{asset('frontend/assets/img/portfolio/portfolio_img07.jpg')}}" alt="">
-                                    </div>
-                                    <div class="portfolio__overlay__content">
-                                        <span>Web Development</span>
-                                        <h4 class="title"><a href="portfolio-details.html">Banking Management System</a></h4>
-                                        <a href="portfolio-details.html" class="link">Case Study</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- portfolio-area-end -->
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
-    <!-- partner-area -->
-    <section class="partner">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <ul class="partner__logo__wrap">
-                        <li>
-                            <img class="light" src="{{asset('frontend/assets/img/icons/partner_light01.png')}}" alt="">
-                            <img class="dark" src="{{asset('frontend/assets/img/icons/partner_01.png')}}" alt="">
-                        </li>
-                        <li>
-                            <img class="light" src="{{asset('frontend/assets/img/icons/partner_light02.png')}}" alt="">
-                            <img class="dark" src="{{asset('frontend/assets/img/icons/partner_02.png')}}" alt="">
-                        </li>
-                        <li>
-                            <img class="light" src="{{asset('frontend/assets/img/icons/partner_light03.png')}}" alt="">
-                            <img class="dark" src="{{asset('frontend/assets/img/icons/partner_03.png')}}" alt="">
-                        </li>
-                        <li>
-                            <img class="light" src="{{asset('frontend/assets/img/icons/partner_light04.png')}}" alt="">
-                            <img class="dark" src="{{asset('frontend/assets/img/icons/partner_04.png')}}" alt="">
-                        </li>
-                        <li>
-                            <img class="light" src="{{asset('frontend/assets/img/icons/partner_light05.png')}}" alt="">
-                            <img class="dark" src="{{asset('frontend/assets/img/icons/partner_05.png')}}" alt="">
-                        </li>
-                        <li>
-                            <img class="light" src="{{asset('frontend/assets/img/icons/partner_light06.png')}}" alt="">
-                            <img class="dark" src="{{asset('frontend/assets/img/icons/partner_06.png')}}" alt="">
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <div class="partner__content">
-                        <div class="section__title">
-                            <span class="sub-title">05 - partners</span>
-                            <h2 class="title">I proud to have collaborated with some awesome companies</h2>
-                        </div>
-                        <p>I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Eventually, I decided that it would be a fun challenge to try designing and building my own.</p>
-                        <a href="contact.html" class="btn">Start a conversation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- partner-area-end -->
 
-    <!-- testimonial-area -->
-    <section class="testimonial">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-6 order-0 order-lg-2">
-                    <ul class="testimonial__avatar__img">
-                        <li><img src="{{asset('frontend/assets/img/images/testi_img01.png')}}" alt=""></li>
-                        <li><img src="{{asset('frontend/assets/img/images/testi_img02.png')}}" alt=""></li>
-                        <li><img src="{{asset('frontend/assets/img/images/testi_img03.png')}}" alt=""></li>
-                        <li><img src="{{asset('frontend/assets/img/images/testi_img04.png')}}" alt=""></li>
-                        <li><img src="{{asset('frontend/assets/img/images/testi_img05.png')}}" alt=""></li>
-                        <li><img src="{{asset('frontend/assets/img/images/testi_img06.png')}}" alt=""></li>
-                        <li><img src="{{asset('frontend/assets/img/images/testi_img07.png')}}" alt=""></li>
-                    </ul>
-                </div>
-                <div class="col-xl-5 col-lg-6">
-                    <div class="testimonial__wrap">
-                        <div class="section__title">
-                            <span class="sub-title">06 - Client Feedback</span>
-                            <h2 class="title">Happy clients feedback</h2>
-                        </div>
-                        <div class="testimonial__active">
-                            <div class="testimonial__item">
-                                <div class="testimonial__icon">
-                                    <i class="fas fa-quote-left"></i>
-                                </div>
-                                <div class="testimonial__content">
-                                    <p>We are motivated by the satisfaction of our clients. Put your trust in us &share in our H.Spond Asset Management is made up of a team of expert, committed and experienced people with a passion for financial markets. Our goal is to achieve continuous.</p>
-                                    <div class="testimonial__avatar">
-                                        <span>Rasalina De Wiliamson</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial__item">
-                                <div class="testimonial__icon">
-                                    <i class="fas fa-quote-left"></i>
-                                </div>
-                                <div class="testimonial__content">
-                                    <p>We are motivated by the satisfaction of our clients. Put your trust in us &share in our H.Spond Asset Management is made up of a team of expert, committed and experienced people with a passion for financial markets. Our goal is to achieve continuous.</p>
-                                    <div class="testimonial__avatar">
-                                        <span>Rasalina De Wiliamson</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial__arrow"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- testimonial-area-end -->
 
-    <!-- blog-area -->
-    <section class="blog">
-        <div class="container">
-            <div class="row gx-0 justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-9">
-                    <div class="blog__post__item">
-                        <div class="blog__post__thumb">
-                            <a href="blog-details.html"><img src="{{asset('frontend/assets/img/blog/blog_post_thumb01.jpg')}}" alt=""></a>
-                            <div class="blog__post__tags">
-                                <a href="blog.html">Story</a>
-                            </div>
-                        </div>
-                        <div class="blog__post__content">
-                            <span class="date">13 january 2021</span>
-                            <h3 class="title"><a href="blog-details.html">Facebook design is dedicated to what's new in design</a></h3>
-                            <a href="blog-details.html" class="read__more">Read mORe</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-9">
-                    <div class="blog__post__item">
-                        <div class="blog__post__thumb">
-                            <a href="blog-details.html"><img src="{{asset('frontend/assets/img/blog/blog_post_thumb02.jpg')}}" alt=""></a>
-                            <div class="blog__post__tags">
-                                <a href="blog.html">Social</a>
-                            </div>
-                        </div>
-                        <div class="blog__post__content">
-                            <span class="date">13 january 2021</span>
-                            <h3 class="title"><a href="blog-details.html">Make communication Fast and Effectively.</a></h3>
-                            <a href="blog-details.html" class="read__more">Read mORe</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-9">
-                    <div class="blog__post__item">
-                        <div class="blog__post__thumb">
-                            <a href="blog-details.html"><img src="{{asset('frontend/assets/img/blog/blog_post_thumb03.jpg')}}" alt=""></a>
-                            <div class="blog__post__tags">
-                                <a href="blog.html">Work</a>
-                            </div>
-                        </div>
-                        <div class="blog__post__content">
-                            <span class="date">13 january 2021</span>
-                            <h3 class="title"><a href="blog-details.html">How to increase your productivity at work - 2021</a></h3>
-                            <a href="blog-details.html" class="read__more">Read mORe</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="blog__button text-center">
-                <a href="blog.html" class="btn">more blog</a>
-            </div>
-        </div>
-    </section>
-    <!-- blog-area-end -->
+.heading {
+  font-size: 3.5rem;
+  color: rgb(32, 32, 32);
+  font-weight: 800;
+  text-align: center;
+}
+.heading span {
+  color: rgb(115, 3, 167);
+}
+/* contact section starts */
+.contact {
+    background: #e5ecfb;
+    min-height: 60vh;
+  }
+  .contact .container {
+    max-width: 1050px;
+    width: 100%;
+    background: #fff;
+    border-radius: 1.5rem;
+    margin: 0 auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    
+  }
+  .contact .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+  }
+  .contact .content .image-box {
+    max-width: 60%;
+    margin-left: 8rem;
+   
 
-    <!-- contact-area -->
-    <section class="homeContact">
-        <div class="container">
-            <div class="homeContact__wrap">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="section__title">
-                            <span class="sub-title">07 - Say hello</span>
-                            <h2 class="title">Any questions? Feel free <br> to contact</h2>
-                        </div>
-                        <div class="homeContact__content">
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <h2 class="mail"><a href="mailto:Info@webmail.com">Info@webmail.com</a></h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="homeContact__form">
-                            <form action="#">
-                                <input type="text" placeholder="Enter name*">
-                                <input type="email" placeholder="Enter mail*">
-                                <input type="number" placeholder="Enter number*">
-                                <textarea name="message" placeholder="Enter Massage*"></textarea>
-                                <button type="submit">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- contact-area-end -->
+  }
+  .contact .content .image-box img {
+    width: 100%;
+    height: 40rem;
+    position: relative;
+  }
+  .contact .content form {
+    width: 45%;
+    margin-right: 3.5rem;
+  }
+  form .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-group .field {
+    height: 50px;
+    display: flex;
+    position: relative;
+    margin: 1rem;
+    width: 100%;
+  }
+  form i {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    color: rgb(51, 51, 51);
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  form .field input,
+  form .message textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 16px 0 48px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgb(51, 51, 51);
+    background: #e5ecfb;
+  }
+  .field input::placeholder,
+  .message textarea::placeholder {
+    color: rgb(51, 51, 51);
+  }
+  .field input:focus,
+  .message textarea:focus {
+    padding-left: 47px;
+    border: 2px solid rgb(115, 3, 167);
+  }
+  .field input:focus ~ i,
+  .message textarea:focus ~ i {
+    color: rgb(115, 3, 167);
+  }
+  form .message {
+    position: relative;
+    margin: 1rem;
+    width: 100%;
+  }
+  form .message i {
+    top: 25px;
+    font-size: 20px;
+    left: 15px;
+  }
+  form .message textarea {
+    min-height: 130px;
+    max-height: 230px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 12px 20px 0 48px;
+  }
+  form .message textarea::-webkit-scrollbar {
+    width: 0px;
+  }
+  form .button-area {
+    display: flex;
+    float: right;
+    flex-direction: row-reverse;
+  }
+  .button-area button {
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 13px 25px;
+    background: #2506ad;
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    transition: 0.3s ease;
+    font-family: "Nunito", sans-serif;
+  }
+  .button-area button:hover {
+    background: #421cecf5;
+  }
+  .button-area span {
+    font-size: 17px;
+    padding: 1rem;
+    display: none;
+  }
+  .button-area button i {
+    position: relative;
+    top: 6px;
+    left: 2px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    color: #fff;
+  }
+  .button-area button:hover i {
+    left: 8px;
+  }
+  /* contact section media queries starts */
+  @media (max-width: 900px) {
+    .contact {
+      min-height: 70vh;
+    }
+    .contact .container {
+      margin: 3rem 0 2rem 0;
+  
+      
+    }
+    .contact .container .content {
+      padding: 18px 12px;
+  
+      
+    }
+    .contact .content .image-box {
+      display: none;
+      
+    }
+    .contact .content form {
+      width: 100%;
+      margin-right: 2rem;
+    }
+  }
+  /* contact section media queries ends */
+  /* contact section ends */
 
-</main> 
-    @endsection
+
+</style>
+  
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+  
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="./assets/img/contact/page_contact_home.jpg" alt="">
+        </div>
+      <form id="contact-form">
+        
+        <div class="form-group">
+          <div class="field">
+            <input type="text" name="name" placeholder="Name" required>
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="email" placeholder="Email" required>
+            <i class='fas fa-envelope'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="phone" placeholder="Phone">
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          <div class="message">
+          <textarea placeholder="Message" name="message" required></textarea>
+          <i class="fas fa-comment-dots"></i>
+          </div>
+          </div>
+        <div class="button-area">
+          <button type="submit">
+            Submit <i class="fa fa-paper-plane"></i></button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+  <!-- contact section ends -->
+  <!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="frontend\assets\js\script4.js"></script>
+<!-- contact-area-end -->
+@endsection

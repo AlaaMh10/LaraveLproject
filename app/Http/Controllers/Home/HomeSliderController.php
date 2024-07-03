@@ -5,14 +5,15 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\HomeSlide;
-use Intervention\Image\Image;
+use Intervention\Image\Facades\Image;
+
 
 
 class HomeSliderController extends Controller
 {
     public function HomeSlider(){
 
-        $homeslide = HomeSlide::find(2);
+        $homeslide = HomeSlide::find(3);
         return view('admin.home_slide.home_slide_all',compact('homeslide'));
 
     } // End Methode

@@ -6,22 +6,32 @@
 
 
 <div class="row">
-                            <div class="col-md-6 col-xl-3">
 
+   
+                            <div class="col-md-6 col-xl-3">
                                 <!-- Simple card -->
-                                <div class="card"><br><br>
+                                <div class="card card_profile"><br><br>
+                                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item has-arrow waves-effect">
+                                                <a class="nav-link" href="{{route('edit.profile')}}">Edit Profile</a>
+                                            </li>
+                                            <li class="nav-item has-arrow waves-effect">
+                                                <a class="nav-link" href="{{ route('change.password') }}">Security</a>
+                                            </li>
+                                        </ul>
+                                    
+                                    </nav>
                                     <center>
-                                    <img class="rounded-circle avatar-xl" src="{{ (!empty($adminDate->profile_image))? url('upload/admin_images/'.$adminDate->profile_image):url('upload/no_image.jpg') }}" alt="Card image cap">
+                                    <img class="rounded-circle avatar-xl" src="{{ (!empty($adminData->profile_image))? url('upload/admin_images/'.$adminData->profile_image):url('upload/no_image.jpg') }}" alt="Card image cap">
                                     </center>
                                     <div class="card-body">
-                                        <h4 class="card-title">Name : {{$adminDate ->name}}</h4>
+                                        <h4 class="card-title">Name : {{$adminData ->name}}</h4>
                                         <hr>
-                                        <h4 class="card-title">user Email : {{$adminDate ->email}}</h4>
+                                        <h4 class="card-title">user Email : {{$adminData ->email}}</h4>
                                         <hr>
-                                        <h4 class="card-title">User Name : {{$adminDate ->username}}</h4>
-                                        <hr>
-                                        <a href="{{route('edit.profile')}}" class="btn btn-primary btn-rounded waves-effect waves-light">Edit Profile</a>
-
+                                        <h4 class="card-title">User Name : {{$adminData ->username}}</h4>
                                     </div>
                                 </div>
 

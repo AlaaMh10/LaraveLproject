@@ -4,7 +4,18 @@
 
 <div class="page-content">
     <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
+            <ul class="navbar-nav">
+                <li class="nav-item has-arrow waves-effect">
+                    <a class="nav-link" href="{{route('edit.profile')}}">Edit Profile</a>
+                </li>
+                <li class="nav-item has-arrow waves-effect">
+                    <a class="nav-link" href="{{ route('change.password') }}">Security</a>
+                </li>
+            </ul>
+        
+        </nav>
 
 
         <div class="row">
@@ -19,21 +30,21 @@
                             <div class="row mb-3">
                                 <label for="example-text-input" class="col-sm-2 col-form-label">Name</label>
                                 <div class="col-sm-10">
-                                    <input name='name' class="form-control" type="text" value="{{ $editDate->name }}" id="example-text-input">
+                                    <input name='name' class="form-control" type="text" value="{{ $editData->name }}" id="example-text-input">
                                 </div>
                             </div>
 
                             <div class="row mb-3">
                                 <label for="example-text-input" class="col-sm-2 col-form-label">UserName</label>
                                 <div class="col-sm-10">
-                                    <input name='username' class="form-control" type="text" value="{{ $editDate->username }}" id="example-text-input">
+                                    <input name='username' class="form-control" type="text" value="{{ $editData->username }}" id="example-text-input">
                                 </div>
                             </div>
 
                             <div class="row mb-3">
                                 <label for="example-text-input" class="col-sm-2 col-form-label">Email</label>
                                 <div class="col-sm-10">
-                                    <input name='email' class="form-control" type="text" value="{{ $editDate->email }}" id="example-text-input">
+                                    <input name='email' class="form-control" type="text" value="{{ $editData->email }}" id="example-text-input">
                                 </div>
                             </div>
 

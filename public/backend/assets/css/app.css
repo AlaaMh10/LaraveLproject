@@ -63,6 +63,13 @@ File: Main Css File
   background-color: #fafafa;
 }
 
+.card-log{
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  }
+
+
 .navbar-brand-box {
   padding: 0 1.5rem;
   text-align: center;
@@ -439,7 +446,7 @@ body[data-layout=horizontal] .footer {
 .vertical-menu {
   width: 240px;
   z-index: 1001;
-  background: #ffffff;
+  background: #F1F1F1;
   bottom: 0;
   margin-top: 0;
   position: fixed;
@@ -781,6 +788,7 @@ body[data-sidebar-size=small] .navbar-brand-box {
   }
 }
 body[data-sidebar-size=small] .vertical-menu {
+  padding: 60px;
   width: 160px;
   text-align: center;
 }
@@ -1469,7 +1477,7 @@ body[data-layout=horizontal][data-layout-size=boxed] .container-fluid, body[data
   right: 0;
   top: 0;
   opacity: 0.7;
-  background-color: #000;
+  background-color: #0E0E0E;
 }
 
 .flex-1 {
